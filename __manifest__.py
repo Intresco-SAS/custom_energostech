@@ -20,14 +20,15 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['purchase','payment_report_co'],
+    'depends': ['purchase','payment_report_co','l10n_co_tax_extension','l10n_co_e-invoice'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/purchase_order.xml',
         'views/templates.xml',
-        'report/purchase_order.xml'
+        'report/purchase_order.xml',
+        'report/invoice_report_custom.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
