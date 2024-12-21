@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<template id="purchaseorder_document_energostech" inherit_id="payment_report_co.purchaseorder_document_inherit">
+		<template id="purchaseorder_document_energostech" inherit_id="l10n_co_reports_int.purchaseorder_document_inherit">
             <xpath expr="//div[@id='informations']" position="inside">
                 <div t-if="o.x_comparativo">
                     <strong>No. Comparativo:</strong>
                     <span t-field="o.x_comparativo" class="m-0"/>
                 </div> 
             </xpath>
-            <xpath expr="//div[@class='page']/div[2]/div/div[3]" position="replace">
+            <xpath expr="//div[@class='container']/div/div[1]" position="replace">
                 <div class="col-4">
                     <b>Dirección de Envío:</b><br/>
                     <t t-if="o.x_direccion_env">                                                 
