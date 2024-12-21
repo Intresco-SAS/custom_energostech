@@ -28,7 +28,7 @@
         'views/purchase_order.xml',
         'views/templates.xml',
         'report/purchase_order.xml',
-        'report/invoice_report_custom.xml',
+        #'report/invoice_report_custom.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
