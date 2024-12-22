@@ -20,7 +20,12 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['purchase','payment_report_co','l10n_co_tax_extension','l10n_co_e-invoice'],
+    'depends': [
+        'purchase',
+        'l10n_co_reports_int',
+        'l10n_co_tax_extension',
+        'l10n_co_e-invoice'
+    ],
 
     # always loaded
     'data': [
